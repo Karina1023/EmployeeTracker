@@ -1,9 +1,8 @@
-requestAnimationFrame('dotenv').config()
+//DEPENDENCIES
 
 const inquirer = require("inquirer");
 const mysql = require("mysql");
-const { RSA_NO_PADDING } = require("node:constants");
-const { createDeflateRaw } = require("node:zlib");
+const cTable = require('console.table');
 
 var connection = mysql.createConnection({
     host:"localhost",
